@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.example</groupId>
+	<artifactId>spring-cloud-group</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>spring-cloud-group</name>
+	<url>http://maven.apache.org</url>
+	<description>spring-cloud-group</description>
+
+	<properties>
+		<group_varsion>0.0.1-SNAPSHOT</group_varsion>
+		<junit_varsion>3.8.1</junit_varsion>
+	</properties>
+
+	<modules>
+		<module>ex-depy-boot</module>
+		<module>ex-depy-cloud</module>
+		<module>ex-depy-dbmybatis</module>
+
+		<module>ex-config-repo</module>
+		<module>ex-config-server</module>
+
+		<module>ex-sim-parent</module>
+		<!-- <module>ex-sleuth-parent</module>
+		<module>ex-thrift-parent</module> -->
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<!--junit -->
+			<dependency>
+		    	<groupId>junit</groupId>
+		    	<artifactId>junit</artifactId>
+		      	<version>${junit_varsion}</version>
+		      	<scope>test</scope>
+		    </dependency>
+
+			<!-- ************************* -->
+			<!-- common lib satrt          -->
+			<!-- ************************* -->
+			<!--dbmybatis -->
+			<dependency>
+				<groupId>com.example</groupId>
+				<artifactId>ex-depy-dbmybatis</artifactId>
+				<version>${group_varsion}</version>
+				<type>pom</type>
+			</dependency>
+			<!-- ************************* -->
+			<!-- common lib end            -->
+			<!-- ************************* -->
+
+
+			<!-- ************************* -->
+			<!-- evn lib start             -->
+			<!-- ************************* -->
+			<!--spring-boot -->
+			<dependency>
+				<groupId>com.example</groupId>
+				<artifactId>ex-depy-boot</artifactId>
+				<version>${group_varsion}</version>
+				<type>pom</type>
+			</dependency>
+			<!--spring-cloud -->
+			<dependency>
+				<groupId>com.example</groupId>
+				<artifactId>ex-depy-cloud</artifactId>
+				<version>${group_varsion}</version>
+				<type>pom</type>
+			</dependency>
+			<!-- ************************* -->
+			<!-- evn lib end               -->
+			<!-- ************************* -->
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<defaultGoal>compile</defaultGoal>
+	</build>
+</project>

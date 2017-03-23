@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.example</groupId>
+	<artifactId>ex-depy-dbmybatis</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>ex-depy-dbmybatis</name>
+	<url>http://maven.apache.org</url>
+	<description>ex-depy-dbmybatis</description>
+
+	<properties>
+		<jolokia_core_version>1.3.5</jolokia_core_version>
+		<tomcat_jdbc_version>8.5.11</tomcat_jdbc_version>
+		<spring_jdbc_version>4.3.7.RELEASE</spring_jdbc_version>
+		<!-- <spring_jdbc_version>5.0.0.M5</spring_jdbc_version> -->
+		<mysql_connector_java_version>5.1.34</mysql_connector_java_version>
+		<mybatis_version>3.2.8</mybatis_version>
+		<mybatis_spring_version>1.2.2</mybatis_spring_version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.jolokia</groupId>
+			<artifactId>jolokia-core</artifactId>
+			<version>${jolokia_core_version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jdbc</artifactId>
+			<version>${tomcat_jdbc_version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring_jdbc_version}</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql_connector_java_version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>${mybatis_version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>${mybatis_spring_version}</version>
+		</dependency>
+	</dependencies>
+</project>
