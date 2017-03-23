@@ -23,7 +23,7 @@
 
 使用import导入普通工程即可使用
 
-* spring boot版本：1.3.5.RELEASE
+* spring boot版本：1.5.1.RELEASE
 * spring cloud版本：Brixton.RELEASE
 
 详细介绍见：http://www.cnblogs.com/skyblog/p/5127712.html
