@@ -23,6 +23,7 @@
 
 		<module>ex-config-repo</module>
 		<module>ex-config-server</module>
+		<module>ex-eureka-server</module>
 
 		<module>ex-sim-parent</module>
 		<!-- <module>ex-sleuth-parent</module>
