@@ -18,6 +18,10 @@
 	<url>http://maven.apache.org</url>
 	<description>ex-depy-cloud</description>
 
+	<properties>
+		<jolokia_core_version>1.3.5</jolokia_core_version>
+	</properties>
+
 	<dependencyManagement>
 	  <dependencies>
         <dependency>
@@ -27,6 +31,11 @@
             <type>pom</type>
             <scope>import</scope>
         </dependency>
+        <dependency>
+			<groupId>org.jolokia</groupId>
+			<artifactId>jolokia-core</artifactId>
+			<version>${jolokia_core_version}</version>
+		</dependency>
 	  </dependencies>
 	</dependencyManagement>
 
@@ -64,6 +73,11 @@
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 
+		<!-- 使用hystrix -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -72,6 +86,11 @@
 		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-security</artifactId>
 			</dependency> -->
 		<!-- 服务注册所需环境 -->
+
+		<dependency>
+			<groupId>org.jolokia</groupId>
+			<artifactId>jolokia-core</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

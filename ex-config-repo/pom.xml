@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>ex-config-repo</artifactId>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 	<name>ex-config-repo</name>
 	<url>http://maven.apache.org</url>
 	<description>ex-config-repo</description>

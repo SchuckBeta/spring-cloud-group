@@ -9,13 +9,15 @@
 		<version>0.0.1-SNAPSHOT</version>
   	</parent>
 
-	<groupId>com.example</groupId>
 	<artifactId>ex-sim-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>ex-sim-service</name>
 	<url>http://maven.apache.org</url>
 	<description>ex-sim-service</description>
+
+	<properties>
+		<main_class>com.example.sim.service.SimServiceApplication</main_class>
+	</properties>
 
 	<dependencies>
 		<dependency>

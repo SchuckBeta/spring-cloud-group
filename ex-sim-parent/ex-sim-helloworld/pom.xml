@@ -14,6 +14,10 @@
 	<url>http://maven.apache.org</url>
 	<description>ex-sim-helloword</description>
 
+	<properties>
+		<main_class>com.example.sim.helloworld.SimHellowordApplication</main_class>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.example</groupId>

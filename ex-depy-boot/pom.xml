@@ -17,6 +17,15 @@
 	<url>http://maven.apache.org</url>
 	<description>ex-depy-boot</description>
 
+	<properties>
+		<java.version>${java_version}</java.version>
+		<project.build.sourceEncoding>${project_build_sourceEncoding}</project.build.sourceEncoding>
+	</properties>
+
+	<dependencyManagement>
+	  <dependencies></dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 		<!--web应用基本环境配置 -->
 		<dependency>
@@ -33,14 +42,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 		</dependency>
-	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+		<dependency>
+			<groupId>org.jolokia</groupId>
+			<artifactId>jolokia-core</artifactId>
+		</dependency>
+	</dependencies>
 </project>

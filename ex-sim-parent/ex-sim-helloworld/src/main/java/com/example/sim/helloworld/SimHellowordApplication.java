@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @SpringBootApplication
-public class SimHellowordController  {
+public class SimHellowordApplication  {
 
 	volatile static int n=0;
 	volatile static int m=0;
@@ -53,7 +53,7 @@ public class SimHellowordController  {
     }
 
     public static void main(String[] args) throws Exception {
-        SpringApplication.run(SimHellowordController.class, args);
+        SpringApplication.run(SimHellowordApplication.class, args);
 //        SpringApplication.run(HellowordController.class, "--server.port=8081");
 //        java -jar cloud-simple-helloword-0.0.1.jar --server.port=8081
     }

@@ -18,6 +18,11 @@
 	<url>http://maven.apache.org</url>
 	<description>ex-depy-cloud</description>
 
+	<properties>
+		<java.version>${java_version}</java.version>
+		<project.build.sourceEncoding>${project_build_sourceEncoding}</project.build.sourceEncoding>
+	</properties>
+
 	<dependencyManagement>
 	  <dependencies>
 	    <dependency>
@@ -60,6 +65,10 @@
 		<!-- eureka注册服务器-client端 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka</artifactId>
 		</dependency>
 		<!-- eureka注册服务器-server端-->
@@ -68,17 +77,19 @@
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 		</dependency>
 
+		<!-- hystrix断路器 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-hystrix</artifactId>
+		</dependency>
+
 		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-security</artifactId>
 			</dependency> -->
 		<!-- 服务注册所需环境 -->
-	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+		<dependency>
+			<groupId>org.jolokia</groupId>
+			<artifactId>jolokia-core</artifactId>
+		</dependency>
+	</dependencies>
 </project>

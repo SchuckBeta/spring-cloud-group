@@ -1,0 +1,37 @@
+/*
+ * Copyright 2012-2020 the original author or authors.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * @author lzhoumail@126.com/zhouli
+ * Git http://git.oschina.net/zhou666/spring-cloud-7simple
+ */
+
+package com.example.sim.ui.web;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.sim.ui.model.User;
+import com.example.sim.ui.service.UserFeignService;
+//import com.example.sim.ui.service.UserServiceProvider.FeignUserService;
+
+
+
+@RestController
+public class UserFeignController {
+
+	@Autowired
+	UserFeignService userService;
+
+//	@Autowired
+//	FeignUserService feignUserService;
+
+	@RequestMapping(value="/feign/users")
+	public ResponseEntity<List<User>> readUserInfo(){
+		List<User> users=userService.readUserInfo();
+		return new ResponseEntity<List<User>>(users,HttpStatus.OK);
+	}
+}
