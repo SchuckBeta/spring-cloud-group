@@ -2,8 +2,10 @@
 
 #### 本项目基于 spring-cloud-7simple 项目修改优化，可访问原作者博客查看教程
 
+**项目基本用法请查看 http://www.cnblogs.com/skyblog/p/5133796.html
 
 **7simple**总共有7个例子，展示了spring cloud的基本用法。
+
 
 -------------------
 7个例子包括：
