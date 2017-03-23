@@ -17,14 +17,19 @@
 	</properties>
 
 	<modules>
+		<!-- pom -->
 		<module>ex-depy-boot</module>
 		<module>ex-depy-cloud</module>
 		<module>ex-depy-dbmybatis</module>
 
+		<!-- config -->
 		<module>ex-config-repo</module>
-		<module>ex-config-server</module>
-		<module>ex-eureka-server</module>
 
+		<!-- server -->
+		<module>ex-server-config</module>
+		<module>ex-server-eureka</module>
+
+		<!-- app -->
 		<module>ex-sim-parent</module>
 		<!-- <module>ex-sleuth-parent</module>
 		<module>ex-thrift-parent</module> -->
