@@ -18,6 +18,8 @@
 	<description>ex-depy-boot</description>
 
 	<properties>
+		<java_version>1.8</java_version>
+		<project_build_sourceEncoding>UTF-8</project_build_sourceEncoding>
 		<java.version>${java_version}</java.version>
 		<project.build.sourceEncoding>${project_build_sourceEncoding}</project.build.sourceEncoding>
 	</properties>
