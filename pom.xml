@@ -85,12 +85,12 @@
 	<dependencyManagement>
 		<dependencies>
 			<!--junit -->
-			<dependency>
+			<!-- <dependency>
 		    	<groupId>junit</groupId>
 		    	<artifactId>junit</artifactId>
 		      	<version>${junit_varsion}</version>
 		      	<scope>test</scope>
-		    </dependency>
+		    </dependency> -->
 
 			<!-- ************************* -->
 			<!-- common lib satrt          -->
@@ -131,10 +131,10 @@
 	</dependencyManagement>
 
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 	    	<groupId>junit</groupId>
 	    	<artifactId>junit</artifactId>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 
 	<build>
